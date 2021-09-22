@@ -7,8 +7,6 @@ import { Post } from '../lib/types/post';
 import Sidebar from '../components/sidebar';
 
 export default function Home({ posts }: { posts: Post[] }) {
-  console.log(posts);
-
   return (
     <Layout>
       <Sidebar posts={posts} />

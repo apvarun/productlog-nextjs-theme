@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './header';
 
 import config from '../config.json';
+import Footer from './footer';
 
 export default function Layout({
   children,
@@ -30,6 +31,7 @@ export default function Layout({
       <main className="p-8 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-2 lg:gap-4">
         {children}
       </main>
+      <Footer />
     </>
   );
 }

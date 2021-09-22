@@ -34,7 +34,8 @@ const getAllFiles = async (dir: string, basePath: string) => {
 
     postList.push({
       path: postPath,
-      slug: frontmatter?.slug || postPath + '/' + slug,
+      slug: frontmatter?.slug || slug,
+      permalink: frontmatter?.slug || postPath + '/' + slug,
       createdAt,
       title: frontmatter?.title || title,
       content,
@@ -71,7 +72,7 @@ export function getLocalSource(): Source {
   const getPost = async (slug: string) => {
     await fetchPostsIfRequired();
 
-    return posts.find((post) => post.slug === slug);
+    return posts.find((post) => `${post.path}/${post.slug}` === slug);
   };
 
   const getPostsCount = async () => {

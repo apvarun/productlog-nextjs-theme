@@ -5,12 +5,12 @@ import dayjs from 'dayjs';
 import { Post } from '../lib/types/post';
 import Link from 'next/link';
 
-export default function PostView({ title, content, createdAt, slug }: Post) {
+export default function PostView({ title, content, createdAt, permalink }: Post) {
   const date = dayjs(createdAt || new Date()).format('D MMMM YYYY');
 
   return (
     <article>
-      <Link href={slug}>
+      <Link href={permalink}>
         <a>
           <h2 className="text-3xl font-bold">{title}</h2>
         </a>

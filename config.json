@@ -6,11 +6,11 @@
     "description": "Recent changes to your product and it's benefits",
     "image": "/preview.png"
   },
+  "logo": {
+    "image": "",
+    "text": "Product Log"
+  },
   "header": {
-    "logo": {
-      "image": "",
-      "text": "Product Log"
-    },
     "title": "Changelog",
     "description": "New updates and improvements to Outline. Follow us on twitter to find out when features are released.",
     "menu": [
@@ -35,6 +35,22 @@
         "name": "Sign Up",
         "link": "https://example.com",
         "type": "button"
+      }
+    ]
+  },
+  "footer": {
+    "links": [
+      {
+        "name": "About",
+        "link": "https://example.com"
+      },
+      {
+        "name": "F.A.Q",
+        "link": "https://example.com"
+      },
+      {
+        "name": "Contact",
+        "link": "https://example.com"
       }
     ]
   }
