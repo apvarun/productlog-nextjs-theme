@@ -10,7 +10,11 @@ export default function Header() {
         <Link href="/">
           <a className="font-medium text-2xl flex gap-2">
             {config.logo.image && (
-              <img src={config.logo.image} className="w-8 max-h-8 object-contain" />
+              <img
+                src={config.logo.image}
+                className="w-8 max-h-8 object-contain"
+                alt={config.logo.text}
+              />
             )}
             <span>{config.logo.text}</span>
           </a>

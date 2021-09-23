@@ -12,10 +12,10 @@ ProductLog is a NextJS theme for hosting your product's changelog. [Preview the 
 ## Features
 
 - SEO friendly
-- Decent Lighthouse score
+- Excellent Lighthouse score
 - Mobile-friendly view
 - Next image optimization
-- Easy styling customization with Tailwind 2.0
+- Easy styling customization with Tailwind v2
 
 ## Quick Start Guide
 

@@ -13,6 +13,7 @@ export default function Footer() {
               <img
                 src={config.logo.image}
                 className="w-12 max-h-12 object-contain"
+                alt={config.logo.text}
               />
             </div>
           )}
@@ -21,7 +22,7 @@ export default function Footer() {
               {config.logo.text}
             </a>
           </Link>
-          <p className="text-gray-500">{config.meta.description}</p>
+          <p className="text-gray-600">{config.meta.description}</p>
         </div>
         {config.footer.section.map((section) => (
           <div className="md:p-8" key={section.linkTitle}>
