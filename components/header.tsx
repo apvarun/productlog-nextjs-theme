@@ -8,9 +8,9 @@ export default function Header() {
     <header className="bg-gray-100">
       <div className="flex items-center justify-between max-w-6xl p-8 mx-auto">
         <Link href="/">
-          <a className="block font-medium text-2xl">
+          <a className="font-medium text-2xl flex gap-2">
             {config.logo.image && (
-              <img src={config.logo.image} className="w-8" />
+              <img src={config.logo.image} className="w-8 max-h-8 object-contain" />
             )}
             <span>{config.logo.text}</span>
           </a>

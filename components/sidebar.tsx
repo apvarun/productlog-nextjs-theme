@@ -21,7 +21,7 @@ export default function Sidebar({
       )}
       {paths.map((path) => (
         <Link href={`/${path}`} key={path}>
-          <a className="text-xl mb-2">{path}</a>
+          <a className="text-xl mb-4">{path}</a>
         </Link>
       ))}
     </div>

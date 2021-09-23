@@ -7,13 +7,18 @@ export default function Footer() {
   return (
     <footer className="bg-gray-100">
       <div className="flex flex-col md:flex-row gap-4 max-w-6xl p-8 mx-auto">
-        <div className="flex-1 flex flex-col justify-center">
+        <div className="flex-1 flex flex-col justify-center items-start">
+          {config.logo.image && (
+            <div className="mb-2">
+              <img
+                src={config.logo.image}
+                className="w-12 max-h-12 object-contain"
+              />
+            </div>
+          )}
           <Link href="/">
-            <a className="block font-medium text-2xl">
-              {config.logo.image && (
-                <img src={config.logo.image} className="w-8" />
-              )}
-              <span>{config.logo.text}</span>
+            <a className="block justify-items-start font-medium text-2xl">
+              {config.logo.text}
             </a>
           </Link>
           <p className="text-gray-500">{config.meta.description}</p>

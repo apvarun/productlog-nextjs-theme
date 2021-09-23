@@ -4,10 +4,10 @@
   "meta": {
     "title": "Product Log - Home of your Product's changelogs",
     "description": "Recent changes to your product and it's benefits",
-    "image": "/preview.png"
+    "image": "/static/ProductLog.png"
   },
   "logo": {
-    "image": "",
+    "image": "/static/logo.svg",
     "text": "Product Log"
   },
   "header": {

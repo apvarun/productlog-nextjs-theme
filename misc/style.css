@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 img {
-  @apply rounded;
+  @apply rounded mx-auto;
 }
