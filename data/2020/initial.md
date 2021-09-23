@@ -1,6 +1,6 @@
 ---
-title: Initial release
-createdAt: '2021-08-21'
+title: Initial planning
+createdAt: '2020-12-21'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada diam libero, a bibendum neque fermentum non. Sed consectetur vel erat sed vestibulum. Mauris cursus odio non lectus viverra cursus.

@@ -39,19 +39,42 @@
     ]
   },
   "footer": {
-    "links": [
+    "section": [
       {
-        "name": "About",
-        "link": "https://example.com"
+        "linkTitle": "Social",
+        "links": [
+          {
+            "name": "Twitter",
+            "link": "https://example.com"
+          },
+          {
+            "name": "GitHub",
+            "link": "https://example.com"
+          },
+          {
+            "name": "Discuss",
+            "link": "https://example.com"
+          }
+        ]
       },
       {
-        "name": "F.A.Q",
-        "link": "https://example.com"
-      },
-      {
-        "name": "Contact",
-        "link": "https://example.com"
+        "linkTitle": "Company",
+        "links": [
+          {
+            "name": "About",
+            "link": "https://example.com"
+          },
+          {
+            "name": "F.A.Q",
+            "link": "https://example.com"
+          },
+          {
+            "name": "Contact",
+            "link": "https://example.com"
+          }
+        ]
       }
     ]
-  }
+  },
+  "footerText": "© 2021 Product Log · All rights reserved"
 }
