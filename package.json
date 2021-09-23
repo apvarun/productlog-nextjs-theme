@@ -14,9 +14,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/apvarun/productlog-theme.git"
+    "url": "https://github.com/apvarun/productlog-nextjs-theme.git"
   },
-  "homepage": "",
+  "homepage": "https://productlog-theme.vercel.app/",
   "scripts": {
     "dev": "next dev",
     "build": "next build"
