@@ -4,8 +4,14 @@ import dayjs from 'dayjs';
 
 import { Post } from '../lib/types/post';
 import Link from 'next/link';
+import MarkdownImage from './markdown/image';
 
-export default function PostView({ title, content, createdAt, permalink }: Post) {
+export default function PostView({
+  title,
+  content,
+  createdAt,
+  permalink,
+}: Post) {
   const date = dayjs(createdAt || new Date()).format('D MMMM YYYY');
 
   return (
@@ -16,7 +22,24 @@ export default function PostView({ title, content, createdAt, permalink }: Post)
         </a>
       </Link>
       <p className="mt-1 text-sm text-gray-500">{date}</p>
-      <Markdown className="prose lg:prose-lg mx-auto max-w-6xl pt-4 pb-8">
+      <Markdown
+        options={{
+          overrides: {
+            img: {
+              component: MarkdownImage,
+            },
+            p: {
+              component: ({ children, ...props }) => {
+                const ParaComponent =
+                  children[0]?.type === MarkdownImage ? 'div' : 'p';
+
+                return <ParaComponent {...props}>{children}</ParaComponent>;
+              },
+            },
+          },
+        }}
+        className="prose lg:prose-lg mx-auto max-w-6xl pt-4 pb-8"
+      >
         {content}
       </Markdown>
     </article>

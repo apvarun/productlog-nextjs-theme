@@ -22,6 +22,7 @@
     "build": "next build"
   },
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.1",
     "dayjs": "^1.10.7",
     "gray-matter": "^4.0.3",
     "markdown-to-jsx": "^7.1.3",

@@ -5,3 +5,18 @@
 img {
   @apply rounded mx-auto;
 }
+
+/* Markdown Image */
+.markdown-img {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.markdown-img-container {
+  width: 100%;
+}
+.markdown-img-container > div {
+  position: unset !important;
+}
