@@ -4,7 +4,8 @@ import dayjs from 'dayjs';
 import Link from 'next/link';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { obsidian } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
-
+import 'katex/dist/katex.min.css';
+import { BlockMath } from 'react-katex';
 
 import { Post } from '../lib/types/post';
 import MarkdownImage from './markdown/image';
@@ -47,6 +48,10 @@ export default function PostView({
             code: {
               component: ({ className, children }) => {
                 const language = (className || '').replace('lang-', '');
+
+                if (language === 'math') {
+                  return <BlockMath math={children} />;
+                }
 
                 return (
                   <SyntaxHighlighter language={language} style={obsidian}>

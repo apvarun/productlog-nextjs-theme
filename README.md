@@ -17,6 +17,7 @@ ProductLog is a NextJS theme for hosting your product's changelog. [Preview the 
 - Next image optimization
 - Easy styling customization with Tailwind v2
 - Syntax highlighting
+- KaTeX support
 
 ## Quick Start Guide
 
@@ -45,7 +46,6 @@ You can start editing the page by modifying pages/index.js. The page auto-update
 ## Upcoming
 
 - [ ] Analytics
-- [ ] KaTeX support
 - [ ] Support Notion as source
 
 ## Support
