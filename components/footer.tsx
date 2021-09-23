@@ -24,7 +24,7 @@ export default function Footer() {
           <p className="text-gray-500">{config.meta.description}</p>
         </div>
         {config.footer.section.map((section) => (
-          <div className="p-8" key={section.linkTitle}>
+          <div className="md:p-8" key={section.linkTitle}>
             <h3 className="font-bold mb-2">{section.linkTitle}</h3>
             <ul className="">
               {section.links.map((footerLink) => (
