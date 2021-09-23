@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Ubuntu', ...defaultTheme.fontFamily.sans]
-      }
+      },
     },
   },
   variants: {

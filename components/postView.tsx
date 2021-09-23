@@ -1,9 +1,12 @@
 import Markdown from 'markdown-to-jsx';
 import React from 'react';
 import dayjs from 'dayjs';
+import Link from 'next/link';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { obsidian } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+
 
 import { Post } from '../lib/types/post';
-import Link from 'next/link';
 import MarkdownImage from './markdown/image';
 
 export default function PostView({
@@ -34,6 +37,22 @@ export default function PostView({
                   children[0]?.type === MarkdownImage ? 'div' : 'p';
 
                 return <ParaComponent {...props}>{children}</ParaComponent>;
+              },
+            },
+            pre: {
+              component: ({ children, ...props }) => (
+                <p {...props}>{children}</p>
+              ),
+            },
+            code: {
+              component: ({ className, children }) => {
+                const language = (className || '').replace('lang-', '');
+
+                return (
+                  <SyntaxHighlighter language={language} style={obsidian}>
+                    {children}
+                  </SyntaxHighlighter>
+                );
               },
             },
           },
