@@ -76,5 +76,9 @@
       }
     ]
   },
-  "footerText": "© 2021 Product Log · All rights reserved"
+  "footerText": "© 2021 Product Log · All rights reserved",
+  "analytics": {
+    "type": "Google Analytics",
+    "id": ""
+  }
 }

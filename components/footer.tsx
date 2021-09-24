@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 
 import config from '../config.json';
+import Analytics from './analytics';
 
 export default function Footer() {
   return (
@@ -49,6 +50,7 @@ export default function Footer() {
           {config.footerText}
         </div>
       </div>
+      <Analytics />
     </footer>
   );
 }
