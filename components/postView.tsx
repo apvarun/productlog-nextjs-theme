@@ -24,7 +24,7 @@ export default function PostView({
     <article>
       <Link href={permalink}>
         <a>
-          <h2 className="text-3xl font-bold hover:underline">{title}</h2>
+          <h2 className="text-3xl font-bold hover:underline inline-block">{title}</h2>
         </a>
       </Link>
       <p className="mt-1 text-sm text-gray-500">{date}</p>

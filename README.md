@@ -2,7 +2,7 @@
 
 ProductLog is a NextJS theme for hosting your product's changelog. [Preview the theme](https://productlog-theme.vercel.app/) to see what it looks like, or checkout how to use it today.
 
-![ProductLog Theme Logo](/public/static/ProductLog.png)
+![ProductLog Theme Logo](https://github.com/apvarun/productlog-nextjs-theme/raw/main/public/static/ProductLog.png)
 
 ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fapvarun%2Fproductlog-nextjs-theme) ![GitHub](https://img.shields.io/github/license/apvarun/productlog-nextjs-theme) ![GitHub package.json version](https://img.shields.io/github/package-json/v/apvarun/productlog-nextjs-theme)
 
@@ -20,6 +20,10 @@ ProductLog is a NextJS theme for hosting your product's changelog. [Preview the 
 - Easy styling customization with Tailwind v2
 - Syntax highlighting
 - KaTeX support
+
+## Screenshot
+
+![ProductLog Theme Screenshot](https://github.com/apvarun/productlog-nextjs-theme/raw/main/screenshot.png)
 
 ## Quick Start Guide
 
