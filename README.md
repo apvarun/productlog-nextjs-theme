@@ -14,11 +14,12 @@ ProductLog is a NextJS theme for hosting your product's changelog. [Preview the 
 - SEO friendly
 - Excellent Lighthouse score
 - Mobile-friendly view
+- Support Notion as source ([Sample Notion Page](https://polar-shoulder-194.notion.site/cbde2cdc46a14dfcaf5169eab225c30b))
+- Built-in Analytics: Google Analytics, Plausible and Simple analytics
 - Next image optimization
 - Easy styling customization with Tailwind v2
 - Syntax highlighting
 - KaTeX support
-- Built-in Analytics: Google Analytics, Plausible and Simple analytics
 
 ## Quick Start Guide
 
@@ -43,10 +44,6 @@ npm run dev
 Open http://localhost:3000 with your browser to see the result.
 
 You can start editing the page by modifying pages/index.js. The page auto-updates as you edit the file.
-
-## Roadmap
-
-- [ ] Support Notion as source
 
 ## Support
 

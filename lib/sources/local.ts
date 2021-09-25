@@ -33,6 +33,7 @@ const getAllFiles = async (dir: string, basePath: string) => {
     const title = slug.replace('-', ' ');
 
     postList.push({
+      type: 'local',
       path: postPath,
       slug: frontmatter?.slug || slug,
       permalink: frontmatter?.slug || postPath + '/' + slug,
@@ -56,10 +57,11 @@ export function getLocalSource(): Source {
 
     const config = getConfig();
 
-    if ('dataFolder' in config) {
-      const basePath = path.join(process.cwd(), config.dataFolder);
+    if (config) {
+      const basePath = path.join(process.cwd(), config.data.name);
       posts = await getAllFiles(basePath, basePath);
     }
+
     postsFetched = true;
   };
 

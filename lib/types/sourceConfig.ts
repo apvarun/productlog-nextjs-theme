@@ -1,6 +1,8 @@
 interface LocalSourceConfig {
-  type: 'local';
-  dataFolder: string;
+  data: {
+    type: 'local' | 'notion';
+    name: string;
+  };
 }
 
 export type SourceConfig = LocalSourceConfig;

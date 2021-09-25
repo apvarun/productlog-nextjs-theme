@@ -6,9 +6,11 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { obsidian } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import 'katex/dist/katex.min.css';
 import { BlockMath } from 'react-katex';
+import { NotionRenderer } from 'react-notion';
 
 import { Post } from '../lib/types/post';
 import MarkdownImage from './markdown/image';
+import config from '../config.json';
 
 export default function PostView({
   title,
@@ -26,31 +28,60 @@ export default function PostView({
         </a>
       </Link>
       <p className="mt-1 text-sm text-gray-500">{date}</p>
-      <Markdown
-        options={{
-          overrides: {
-            img: {
-              component: MarkdownImage,
-            },
-            p: {
-              component: ({ children, ...props }) => {
-                const ParaComponent =
-                  children[0]?.type === MarkdownImage ? 'div' : 'p';
+      <div className="prose lg:prose-lg mx-auto max-w-6xl pt-4 pb-8">
+        {config.data.type === 'local' && (
+          <Markdown
+            options={{
+              overrides: {
+                img: {
+                  component: MarkdownImage,
+                },
+                p: {
+                  component: ({ children, ...props }) => {
+                    const ParaComponent =
+                      children[0]?.type === MarkdownImage ? 'div' : 'p';
 
-                return <ParaComponent {...props}>{children}</ParaComponent>;
+                    return <ParaComponent {...props}>{children}</ParaComponent>;
+                  },
+                },
+                pre: {
+                  component: ({ children, ...props }) => (
+                    <p {...props}>{children}</p>
+                  ),
+                },
+                code: {
+                  component: ({ className, children }) => {
+                    const language = (className || '').replace('lang-', '');
+
+                    if (language === 'math') {
+                      return <BlockMath math={children} />;
+                    }
+
+                    return (
+                      <SyntaxHighlighter language={language} style={obsidian}>
+                        {children}
+                      </SyntaxHighlighter>
+                    );
+                  },
+                },
               },
-            },
-            pre: {
-              component: ({ children, ...props }) => (
-                <p {...props}>{children}</p>
-              ),
-            },
-            code: {
-              component: ({ className, children }) => {
-                const language = (className || '').replace('lang-', '');
+            }}
+          >
+            {content}
+          </Markdown>
+        )}
+        {config.data.type === 'notion' && (
+          <NotionRenderer
+            blockMap={content}
+            customBlockComponents={{
+              code: ({ blockValue }) => {
+                const language = (blockValue.properties['language']?.[0] || [
+                  '',
+                ])[0];
+                const children = blockValue.properties['title']?.[0] || '';
 
-                if (language === 'math') {
-                  return <BlockMath math={children} />;
+                if (language === 'LaTeX') {
+                  return <BlockMath math={children.toString()} />;
                 }
 
                 return (
@@ -59,13 +90,10 @@ export default function PostView({
                   </SyntaxHighlighter>
                 );
               },
-            },
-          },
-        }}
-        className="prose lg:prose-lg mx-auto max-w-6xl pt-4 pb-8"
-      >
-        {content}
-      </Markdown>
+            }}
+          />
+        )}
+      </div>
     </article>
   );
 }

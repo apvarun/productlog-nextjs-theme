@@ -1,6 +1,8 @@
 {
-  "type": "local",
-  "dataFolder": "data",
+  "data":{
+    "type": "local",
+    "name": "data"
+  },
   "meta": {
     "title": "Product Log - Home of your Product's changelogs",
     "description": "Recent changes to your product and it's benefits",

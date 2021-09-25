@@ -1,17 +1,16 @@
-import path from 'path';
-import fs from 'fs';
 import { getLocalSource } from './sources/local';
 import getConfig from './utils/getConfig';
+import { getNotionSource } from './sources/notion';
 
 export default function getSource() {
   const config = getConfig();
 
-  if ('type' in config) {
-    switch (config.type) {
-      case 'local':
-        return getLocalSource();
-    }
+  switch (config.data.type) {
+    case 'local':
+      return getLocalSource();
+    case 'notion':
+      return getNotionSource();
+    default:
+      return null;
   }
-
-  return null;
 }

@@ -1,4 +1,13 @@
-export interface Post {
+interface LocalPost {
+  type: 'local';
+  content: string;
+}
+interface NotionPost {
+  type: 'notion';
+  content: any;
+}
+
+interface PostCommon {
   path: string;
   slug: string;
   permalink: string;
@@ -6,3 +15,5 @@ export interface Post {
   title: string;
   content: string;
 }
+
+export type Post = PostCommon & (LocalPost | NotionPost);
