@@ -35,6 +35,8 @@ npx degit apvarun/productlog-nextjs-theme
 - Add changelog as files
 - Deploy on Vercel/Netlify or your choice of statuc hosts
 
+More about theme's configuration in the project's [wiki](https://github.com/apvarun/productlog-nextjs-theme/wiki/Configuration).
+
 ## Development
 
 First, run the development server:
