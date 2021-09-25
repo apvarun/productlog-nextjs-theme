@@ -5,7 +5,7 @@ import NavMenu from './navMenu';
 
 export default function Header() {
   return (
-    <header className="bg-gray-100">
+    <header className="bg-primary-light">
       <div className="flex items-center justify-between max-w-6xl p-8 mx-auto">
         <Link href="/">
           <a className="font-medium text-2xl flex gap-2">

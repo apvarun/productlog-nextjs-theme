@@ -37,7 +37,7 @@ const MobileMenu = ({ menu }: { menu: Menu }) => {
                       href={subChild.link}
                       target="_blank"
                       rel="noopener"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-primary-light"
                     >
                       {subChild.name}
                     </a>
@@ -51,7 +51,7 @@ const MobileMenu = ({ menu }: { menu: Menu }) => {
                     href={child.link}
                     target="_blank"
                     rel="noopener"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-primary-light"
                   >
                     {child.name}
                   </a>
@@ -82,7 +82,7 @@ const DropdownMenuItem = ({ name, children }: DropdownItem) => (
               href={child.link}
               target="_blank"
               rel="noopener"
-              className="block px-4 py-2 hover:bg-gray-100"
+              className="block px-4 py-2 hover:bg-primary-light"
             >
               {child.name}
             </a>
@@ -100,7 +100,7 @@ const SimpleMenuItem = ({ name, link, type = '' }: Item) => (
     rel="noopener"
     className={`px-3 py-2 ${
       type === 'button'
-        ? 'rounded bg-gray-300 hover:bg-gray-400 transition-colors'
+        ? 'rounded bg-primary-dark hover:bg-gray-400 transition-colors'
         : ''
     }`}
   >

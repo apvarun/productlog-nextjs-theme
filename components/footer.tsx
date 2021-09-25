@@ -6,7 +6,7 @@ import Analytics from './analytics';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100">
+    <footer className="bg-primary-light">
       <div className="flex flex-col md:flex-row gap-4 max-w-6xl p-8 mx-auto">
         <div className="flex-1 flex flex-col justify-center items-start">
           {config.logo.image && (
@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
         ))}
       </div>
-      <div className="bg-gray-200">
+      <div className="bg-primary-medium">
         <div className="max-w-6xl px-8 py-2 mx-auto font-light text-sm text-center">
           {config.footerText}
         </div>
