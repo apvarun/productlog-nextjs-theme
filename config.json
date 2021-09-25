@@ -14,7 +14,7 @@
   },
   "header": {
     "title": "Changelog",
-    "description": "New updates and improvements to Outline. Follow us on twitter to find out when features are released.",
+    "description": "New updates and improvements to this project will be documented in this page.",
     "menu": [
       {
         "name": "Services",
@@ -76,9 +76,9 @@
           }
         ]
       }
-    ]
+    ],
+    "copyright": "© 2021 Product Log · All rights reserved"
   },
-  "footerText": "© 2021 Product Log · All rights reserved",
   "analytics": {
     "type": "Google Analytics",
     "id": ""

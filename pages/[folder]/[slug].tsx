@@ -3,10 +3,11 @@ import Layout from '../../components/layout';
 import PostView from '../../components/postView';
 import Sidebar from '../../components/sidebar';
 import getSource from '../../lib';
+import { Post } from '../../lib/types/post';
 
-export default function Change({ post }) {
+export default function Change({ post }: { post: Post }) {
   return (
-    <Layout>
+    <Layout title={post.title}>
       <Sidebar posts={[]} showBackHome />
       <div className="md:col-span-3">
         <PostView {...post} key={post.slug} />

@@ -47,7 +47,7 @@ export default function Footer() {
       </div>
       <div className="bg-primary-medium">
         <div className="max-w-6xl px-8 py-2 mx-auto font-light text-sm text-center">
-          {config.footerText}
+          {config.footer.copyright}
         </div>
       </div>
       <Analytics />
