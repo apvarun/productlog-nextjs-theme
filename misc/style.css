@@ -17,6 +17,6 @@ img {
 .markdown-img-container {
   width: 100%;
 }
-.markdown-img-container > div {
+.markdown-img-container > p {
   position: unset !important;
 }

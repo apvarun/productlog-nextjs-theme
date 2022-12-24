@@ -1,9 +1,7 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const MarkdownImage = (props) => (
-  <div className="markdown-img-container">
-    <Image {...props} layout="fill" className="markdown-img" />
-  </div>
+  <Image {...props} className="markdown-img" fill sizes="100vw" />
 );
 
 export default MarkdownImage;

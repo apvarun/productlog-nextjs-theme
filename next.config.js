@@ -1,7 +1,5 @@
 module.exports = {
-  experimental: {
-    turboMode: true,
-  },
+  experimental: {},
   images: {
     domains: [],
   },

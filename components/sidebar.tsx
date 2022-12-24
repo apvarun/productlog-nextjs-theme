@@ -15,13 +15,13 @@ export default function Sidebar({
   return (
     <div className="flex flex-col">
       {showBackHome && (
-        <Link href={`/`}>
-          <a className="mb-4">← Back home</a>
+        <Link href={`/`} className="mb-4">
+          ← Back home
         </Link>
       )}
       {paths.map((path) => (
-        <Link href={`/${path}`} key={path}>
-          <a className="text-xl mb-4">{path}</a>
+        <Link href={`/${path}`} key={path} className="text-xl mb-4">
+          {path}
         </Link>
       ))}
     </div>

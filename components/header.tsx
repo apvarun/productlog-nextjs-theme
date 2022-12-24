@@ -7,8 +7,8 @@ export default function Header() {
   return (
     <header className="bg-primary-light">
       <div className="flex items-center justify-between max-w-6xl p-8 mx-auto">
-        <Link href="/">
-          <a className="font-medium text-2xl flex gap-2">
+        <Link href="/" className="font-medium text-2xl">
+          <span className='flex gap-2'>
             {config.logo.image && (
               <img
                 src={config.logo.image}
@@ -17,7 +17,7 @@ export default function Header() {
               />
             )}
             <span>{config.logo.text}</span>
-          </a>
+          </span>
         </Link>
         <NavMenu />
       </div>

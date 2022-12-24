@@ -14,8 +14,8 @@ const js = new Date();
 
 Cras ut purus eget justo ultricies auctor sit amet non dolor. Fusce mattis in nisl vitae faucibus. Ut at felis quam. Integer tincidunt lobortis neque at facilisis. Nam nulla justo, interdum sed mauris ac, blandit tristique tortor.
 
-```math
+$$
 a^b + b^2 = c^2
-```
+$$
 
 Quisque non pulvinar turpis. Praesent malesuada nunc ac urna luctus, vel pellentesque tellus auctor. In ut dapibus orci. Nullam sodales justo convallis pulvinar blandit. Cras luctus vitae nisi id euismod.

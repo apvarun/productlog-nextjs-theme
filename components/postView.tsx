@@ -1,4 +1,7 @@
+'use client';
+
 import Markdown from 'markdown-to-jsx';
+
 import React from 'react';
 import dayjs from 'dayjs';
 import Link from 'next/link';
@@ -20,12 +23,23 @@ export default function PostView({
 }: Post) {
   const date = dayjs(createdAt || new Date()).format('D MMMM YYYY');
 
+  // TEMP: Skipping SSR since markdown-to-jsx doesn't support SSR
+  const [hydrated, setHydrated] = React.useState(false);
+  React.useEffect(() => {
+    setHydrated(true);
+  }, []);
+
+  if (!hydrated) {
+    // Returns null on first render, so the client and server match
+    return null;
+  }
+
   return (
     <article>
       <Link href={permalink}>
-        <a>
-          <h2 className="text-3xl font-bold hover:underline inline-block">{title}</h2>
-        </a>
+        <h2 className="text-3xl font-bold hover:underline inline-block">
+          {title}
+        </h2>
       </Link>
       <p className="mt-1 text-sm text-gray-500">{date}</p>
       <div className="prose lg:prose-lg mx-auto max-w-6xl pt-4 pb-8">

@@ -8,16 +8,15 @@ ProductLog is a NextJS theme for hosting your product's changelog. [Preview the 
 
 <a href="https://www.buymeacoffee.com/apvarun" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Varun A Coffee" style="height: 30px !important;width: 108px !important;"></a> [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/apvarun/productlog-nextjs-theme)
 
-
 ## Features
 
-- SEO friendly
 - Excellent Lighthouse score
 - Mobile-friendly view
+- SEO friendly
 - Support Notion as source ([Sample Notion Page](https://polar-shoulder-194.notion.site/cbde2cdc46a14dfcaf5169eab225c30b))
 - Built-in Analytics: Google Analytics, Plausible and Simple analytics
 - Next image optimization
-- Easy styling customization with Tailwind v2
+- Easy styling customization with Tailwind v3
 - Syntax highlighting
 - KaTeX support
 

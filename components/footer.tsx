@@ -18,10 +18,8 @@ export default function Footer() {
               />
             </div>
           )}
-          <Link href="/">
-            <a className="block justify-items-start font-medium text-2xl">
-              {config.logo.text}
-            </a>
+          <Link href="/" className="block justify-items-start font-medium text-2xl">
+            {config.logo.text}
           </Link>
           <p className="text-gray-600">{config.meta.description}</p>
         </div>
