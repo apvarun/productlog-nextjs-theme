@@ -19,8 +19,8 @@ export default function Sidebar({
           ← Back home
         </Link>
       )}
-      {paths.map((path) => (
-        <Link href={`/${path}`} key={path} className="text-xl mb-4">
+      {paths.map((path, i) => (
+        <Link href={`/${path}`} key={i + path} className="text-xl mb-4">
           {path}
         </Link>
       ))}
