@@ -23,26 +23,27 @@
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
-    "dayjs": "^1.11.13",
+    "dayjs": "^1.11.19",
     "gray-matter": "^4.0.3",
-    "markdown-to-jsx": "^7.7.6",
-    "next": "^15.5.7",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "markdown-to-jsx": "^9.5.0",
+    "next": "^16.1.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "katex": "^0.16.10",
     "react-katex": "^3.1.0",
     "react-notion": "^0.10.0",
-    "react-syntax-highlighter": "^15.6.1"
+    "react-syntax-highlighter": "^16.1.0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.7",
-    "@tailwindcss/typography": "^0.5.16",
-    "@types/node": "22.15.23",
-    "@types/react": "^19.1.6",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "25.0.3",
+    "@types/react": "^19.2.7",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
     "prop-types": "^15.8.1",
-    "tailwindcss": "^4.1.7",
-    "typescript": "^5.8.3"
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
   },
   "prettier": {
     "printWidth": 80,
@@ -50,5 +51,5 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "packageManager": "pnpm@10.11.0+sha256.a69e9cb077da419d47d18f1dd52e207245b29cac6e076acedbeb8be3b1a67bd7"
+  "packageManager": "pnpm@10.27.0+sha256.d3c7c3d12d87d177e32f01748d5994fb20cd5becf11670ee60530c374ffeabb3"
 }
